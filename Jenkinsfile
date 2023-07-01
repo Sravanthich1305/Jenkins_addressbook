@@ -10,7 +10,7 @@ pipeline {
 
         stage ('Checkout the code') {
             steps{
-                git branch: 'main', url: 'https://github.com/devopstrainers1/spring-petclinic.git'
+                git branch: 'main', url: 'https://git@github.com:devopstrainers1/addressbook.git'
             }
         }
 
