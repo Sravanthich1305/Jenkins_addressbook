@@ -3,14 +3,14 @@ pipeline {
             label 'master'
         }
         tools {
-            maven 'mymaven'
-            jdk 'myjava'
+            maven 'maven3.6.3'
+            jdk 'jdk11'
         }
     stages {
 
         stage ('Checkout the code') {
             steps{
-                git branch: 'main', url: 'https://git@github.com:devopstrainers1/addressbook.git'
+                git branch: 'main', url: 'https://github.com/Sravanthich1305/Jenkins_addressbook.git'
             }
         }
 
